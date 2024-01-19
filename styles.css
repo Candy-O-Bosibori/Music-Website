@@ -351,4 +351,64 @@ ul li .audio-duration{
     margin: 0 5px;
     animation: animate 1s linear infinite;
 }
+/* Your existing CSS code here */
 
+/* Viewport Meta Tag */
+meta {
+    width: device-width;
+    initial-scale: 1.0;
+}
+
+/* Responsive styles */
+@media screen and (max-width: 768px) {
+    .player {
+        width: 90%; /* Adjust as needed */
+    }
+
+    .wrapper {
+        width: 100%; /* Adjust as needed */
+    }
+
+    .img-area {
+        height: auto; /* Adjust as needed */
+    }
+
+    .controls {
+        margin: 15px 0 10px 0; /* Adjust as needed */
+    }
+}
+
+/* Example for responsive font sizes */
+h1 {
+    font-size: 2em;
+}
+
+.song-details .name {
+    font-size: 1.5em;
+}
+
+.song-details .artist {
+    font-size: 1.2em;
+}
+
+.song-timer span {
+    font-size: 1em;
+}
+
+/* Comment section adjustments */
+#comment-section {
+    width: 100%;
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#comment {
+    width: 100%;
+    max-width: 470px;
+}
+
+button {
+    width: 100%;
+    max-width: 100px;
+}
