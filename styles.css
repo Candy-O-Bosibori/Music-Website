@@ -65,6 +65,8 @@ h2{
  border-style: none;
  color: #f1f1f1;
  border-radius: 30px;
+ padding-left: 25px;
+ padding-right: 25px; 
 }
 
 .about {
@@ -403,8 +405,6 @@ ul li .audio-duration{
     margin: 0 5px;
     animation: animate 1s linear infinite;
 }
-/* Your existing CSS code here */
-
 /* Viewport Meta Tag */
 meta {
     width: device-width;
@@ -413,54 +413,56 @@ meta {
 
 /* Responsive styles */
 @media screen and (max-width: 768px) {
-    .player {
-        width: 90%; /* Adjust as needed */
+    body {
+        font-size: 14px; /* Adjust base font size */
     }
 
-    .wrapper {
-        width: 100%; /* Adjust as needed */
+    #Home {
+        height: 50vh; /* Adjust as needed */
     }
 
-    .img-area {
+    #aboutUs {
         height: auto; /* Adjust as needed */
     }
 
-    .controls {
-        margin: 15px 0 10px 0; /* Adjust as needed */
+    .about {
+        width: 80vw; /* Adjust as needed */
     }
-}
 
-/* Example for responsive font sizes */
-h1 {
-    font-size: 2em;
-}
+    .player {
+        min-height: 90vh; /* Adjust as needed */
+    }
 
-.song-details .name {
-    font-size: 1.5em;
-}
+    .wrapper {
+        width: 90%; /* Adjust as needed */
+    }
 
-.song-details .artist {
-    font-size: 1.2em;
-}
+    .controls i {
+        font-size: 24px; /* Adjust as needed */
+    }
 
-.song-timer span {
-    font-size: 1em;
-}
+    .play-pause,
+    .play-pause::before,
+    .play-pause i {
+        height: 35px; /* Adjust as needed */
+        width: 35px; /* Adjust as needed */
+    }
 
-/* Comment section adjustments */
-#comment-section {
-    width: 100%;
-    max-width: 500px;
-    margin-left: auto;
-    margin-right: auto;
-}
+    /* Comment section adjustments */
+    #comment-section {
+        width: 100%;
+        max-width: 100%; /* Make the comment section full-width */
+        margin-left: auto;
+        margin-right: auto;
+    }
 
-#comment {
-    width: 100%;
-    max-width: 470px;
-}
+    #comment {
+        width: 100%;
+        max-width: 100%; /* Make the comment input full-width */
+    }
 
-button {
-    width: 100%;
-    max-width: 100px;
+    .button {
+        width: 100%; /* Make the button full-width */
+        max-width: 100px; /* Adjust as needed */
+    }
 }
